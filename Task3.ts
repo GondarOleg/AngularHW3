@@ -46,7 +46,6 @@ f(obj2);
 
 function f(chekObj: Type1 | Type2 ) {
     if(chekObj instanceof  Type1){
-        var num1 = Math.random() + Math.random() + Math.random();
         var result = results[Math.floor(Math.random() * results.length)]
         console.log(chekObj.teams[0] + ' ' + result + ' ' + chekObj.teams[1]);
     }else if(chekObj instanceof Type2){
