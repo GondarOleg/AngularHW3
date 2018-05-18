@@ -49,7 +49,7 @@ function f(chekObj: Type1 | Type2 ) {
         var result = results[Math.floor(Math.random() * results.length)]
         console.log(chekObj.teams[0] + ' ' + result + ' ' + chekObj.teams[1]);
     }else if(chekObj instanceof Type2){
-        var num1 = Math.floor(Math.random() * 1);
+        var num1 = Math.round(Math.random());
         var num2 = num1 > 0 ? 0 : 1;
         console.log(chekObj.teams[num1] + ' ' + chekObj.teams[num2] + ' ' + chekObj.goals[num1] + ' ' + chekObj.goals[num2] );
     }
